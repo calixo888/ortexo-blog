@@ -10,7 +10,7 @@ function Header({ path, pageTitle, ogImage }) {
       <Head title={pageTitle} ogImage={ogImage} />
 
       <header>
-        <Title path={path} />
+        <Title />
         <Nav />
       </header>
       <style jsx>
