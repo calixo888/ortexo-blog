@@ -5,12 +5,16 @@ const Title = ({ path }) => (
   <>
     {path === "/" ? (
       <h1>
-        <a href={siteMeta.siteUrl}>{siteMeta.title}</a>
+        <a href={siteMeta.siteUrl}>
+          <img style={{ width: "200px" }} src="/static/logo.png" alt="" />
+        </a>
       </h1>
     ) : (
       <p>
         <Link href="/">
-          <a rel="me">{siteMeta.title}</a>
+          <a rel="me">
+            <img style={{ width: "200px" }} src="/static/logo.png" alt="" />
+          </a>
         </Link>
       </p>
     )}

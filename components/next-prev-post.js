@@ -6,9 +6,12 @@ const NextPrevPost = ({ title, path, position }) => {
   return (
     <>
       <Link href={path}>
-        <a>
-          <small>Read {position} post </small>
-          {title}
+        <a style={{ color: "black" }}>
+          {isNext ?
+            <strong>{title} &rarr;</strong>
+            :
+            <strong>&larr; {title}</strong>
+          }
         </a>
       </Link>
       <style jsx>{`
