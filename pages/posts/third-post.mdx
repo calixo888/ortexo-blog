@@ -1,0 +1,18 @@
+import { withRouter } from "next/router";
+import BlogPost from "../../components/layouts/blog-post";
+
+export const meta = {
+  published: true,
+  publishedAt: "2020-06-24",
+  title: "Third Post",
+  summary: "This is the second post!",
+  image: "/static/site-feature.png"
+};
+
+export default withRouter(({ children, router }) => (
+  <BlogPost path={router.pathname} meta={meta}>
+    {children}
+  </BlogPost>
+));
+
+This is our second post!!

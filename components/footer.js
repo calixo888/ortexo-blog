@@ -1,14 +1,9 @@
-import Profile from "./profile";
-
 function Footer() {
   return (
     <footer>
-      <Profile className="profile-footer" />
-
-      <p>
-        Proudly built with <a href="https://nextjs.org">Next.js</a> -{" "}
-        <a href="/feed.json">RSS Feed</a>
-      </p>
+      <small>
+        Proudly built by <a href="https://www.calix.dev/" target="_blank">Calix Huang</a> with Next.js, React, and MDX! Starter source code provided by <a href="https://github.com/j0lv3r4" target="_blank">j0lv3r4</a>.
+      </small>
       <style jsx>{`
         footer {
           padding: 1em 0;

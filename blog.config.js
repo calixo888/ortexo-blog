@@ -1,10 +1,10 @@
 module.exports = {
   siteMeta: {
-    title: "Next.js Starter Blog",
-    author: "Juan Olvera",
+    title: "Launch Tech LLC Blog",
+    author: "Launch Tech LLC",
     image: "/static/site-feature.png",
-    description: "Next.js starter blog",
-    siteUrl: "https://nextjs-blog-starter.now.sh",
+    description: "The official Launch Tech LLC blog!",
+    siteUrl: "https://launchtechllc.com",
     social: {
       twitter: "_jolvera"
     },
