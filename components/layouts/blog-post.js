@@ -17,6 +17,7 @@ function BlogPost({ path, meta, children }) {
     <Layout pageTitle={meta.title} ogImage={meta.image}>
       <SyntaxHighlight />
       <article className="h-entry">
+        <img className="post-image" src={meta.image} alt={meta.title} />
         <header>
           <h1 className="p-name">{meta.title}</h1>
 
@@ -58,6 +59,10 @@ function BlogPost({ path, meta, children }) {
         </footer>
       </article>
       <style jsx>{`
+        .post-image {
+          border-radius: 5px;
+        }
+        
         header {
           margin-bottom: 2em;
         }
