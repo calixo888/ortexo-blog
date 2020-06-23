@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { siteMeta } from "../../blog.config";
 import Layout from "./default";
@@ -15,6 +16,11 @@ function BlogPost({ path, meta, children }) {
 
   return (
     <Layout pageTitle={meta.title} ogImage={meta.image}>
+      <Head>
+        <link rel="og:image" href={meta.image} />
+        <link rel="og:image:alt" href={meta.title}/>
+      </Head>
+
       <SyntaxHighlight />
       <article className="h-entry">
         <img className="post-image" src={meta.image} alt={meta.title} />
@@ -62,7 +68,7 @@ function BlogPost({ path, meta, children }) {
         .post-image {
           border-radius: 5px;
         }
-        
+
         header {
           margin-bottom: 2em;
         }
