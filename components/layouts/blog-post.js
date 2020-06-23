@@ -17,8 +17,7 @@ function BlogPost({ path, meta, children }) {
   return (
     <Layout pageTitle={meta.title} ogImage={meta.image}>
       <Head>
-        <link rel="og:image" href={meta.image} />
-        <link rel="og:image:alt" href={meta.title}/>
+        <meta property="og:image" content={meta.image} />
       </Head>
 
       <SyntaxHighlight />
