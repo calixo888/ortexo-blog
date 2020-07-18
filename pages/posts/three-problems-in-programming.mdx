@@ -1,0 +1,48 @@
+import { withRouter } from "next/router";
+import BlogPost from "../../components/layouts/blog-post";
+
+export const meta = {
+  published: true,
+  publishedAt: "2020-07-13",
+  title: "Three Problems Beginner Programmers Face",
+  summary: "What are 3 problems beginners face when they start in programming?",
+  image: "/static/features/how-to-get-started-in-programming.png"
+};
+
+export default withRouter(({ children, router }) => (
+  <BlogPost path={router.pathname} meta={meta}>
+    {children}
+  </BlogPost>
+));
+
+Whether it’s interest and excitement, pressure from others, the promise of a lucrative career, or something else entirely, you’ve decided to learn how to program. You may have eagerly dived into tutorials, textbooks, or even paid courses, only to hit a roadblock. And then another. And then another. And suddenly, you’re wondering, Why did I think this was a good idea? Why is programming so hard?
+
+The truth is, we’ve all been there. Here are three common problems people face when they start programming and ways to overcome them.
+
+
+### Problem #1: Tutorial Hell
+
+As a beginner, it’s easy to get stuck watching tutorial after tutorial without actually understanding how to apply your newly learned skills to projects. While tutorials can teach you the fundamentals, allowing you to gain a certain level of fluency, they won’t teach you the logic and problem-solving skills critical to becoming a proficient programmer. The only thing that will truly show you how to apply your knowledge is building projects of your own. In turn, this will show you how to combine your skills rather than focusing on just one.
+
+Projects are inherently more motivating than tutorials; after all, the purpose of learning to program is to create things. They also promote collaboration, an important skill when applying programming to any field or interest. One of Launch Tech’s latest products, w3Hacks, aims to do just this by bringing awareness to the importance of project-based learning through a community in which beginners can learn to create projects and equip themselves with industry-level programming skills. Working on projects, or “learning by doing,” is by far the best way to develop the expertise necessary to meet your goals.
+
+
+### Problem #2: Excessive Ambition
+
+While ambition is generally an admirable quality to have, it can actually deter progress and motivation when it comes to learning how to code. Programming is a vastly complex and expansive topic, and it’s easy to become overwhelmed by the seemingly endless languages, frameworks, and terms. Beginners often try to dive into an enormous range of topics at once, leaving them discouraged when they lack the knowledge necessary to program well. As Launch Tech founder Calix Huang points out, “you could learn to print ‘Hello World’ in every programming language, but it’s infinitely more useful to gain a genuine understanding of one language.”
+
+To avoid this common mistake, make sure to pick one simple and useful language, like Python, to start with. This doesn’t mean you need to stick with Python for the rest of your life; after all, Python has many limitations and doesn’t apply to many projects. The purpose of learning it is to gain the skill sets necessary to approach more difficult topics and more complex languages in the future.
+
+Beginners should also keep in mind that it’s okay to be completely unoriginal; in fact, it’s critical to be. While you may want to learn to program in order to create the greatest application of all time, starting small is the best way to build up your skills slowly through simple, common projects. This way, you can easily find resources online when you get stuck and you’ll be able to experience more success, thereby increasing your interest in programming.
+
+
+### Problem #3: Lack of Motivation
+
+The plethora of different terms, technologies, languages, and frameworks that exist within the field can be disheartening for anyone, especially beginners. When external pressures get in the way, it becomes easier than ever to overwhelm yourself and give up.
+
+Calix Huang absolutely hated programming when he first started; he felt that he was “forced into it by [his] parents and didn’t have any true interest in learning to code.” It wasn’t until he quit and picked it back up several months later, on his own initiative, that he began to truly learn programming languages and build his own projects. Many beginners undergo similar experiences, with the lack of self-motivation interfering with their ability to learn. When starting out, make sure to keep in mind your reason for learning to code. While your end goal may be unattainable at the moment, every new skill you learn is one small step toward it.
+
+Once you gain the technical skills necessary, working on simple projects that you or someone you know might actually use is a great way to motivate yourself to follow through and create a finished product. Working with other people has a similar effect—it holds you accountable and forces you to keep progressing.
+
+
+As you become better and better at programming, you’ll find that there’s more and more you don’t understand about the topic. Don’t fret; this is completely natural! The vastness of the field can be daunting to the most experienced of programmers. When you struggle with grasping new concepts or debugging your code—which WILL happen—just remember that you’re not alone, and that you shouldn’t give up.
