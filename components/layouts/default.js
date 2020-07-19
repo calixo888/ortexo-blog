@@ -13,16 +13,6 @@ function Layout({ path, children, pageTitle, ogImage }) {
 
         <Footer />
       </Container>
-      <img className="wave" src="/static/wave.png" />
-
-    <style jsx>{`
-      .wave {
-        background-color: #eee;
-        transform: rotate(180deg);
-        padding-top: 50px;
-        width: 100%;
-      }
-    `}</style>
     </>
   );
 }
