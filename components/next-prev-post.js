@@ -6,7 +6,7 @@ const NextPrevPost = ({ title, path, position }) => {
   return (
     <>
       <Link href={path}>
-        <a style={{ color: "black" }}>
+        <a>
           {isNext ?
             <strong>{title} &rarr;</strong>
             :

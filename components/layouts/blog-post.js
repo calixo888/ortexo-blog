@@ -29,16 +29,12 @@ function BlogPost({ path, meta, children }) {
           <div>
             <PublishedAt date={meta.publishedAt} link={path} />
 
-            <Link href="/about">
-              <a
-                color="#aaa"
-                rel="author"
-                className="p-author h-card"
-                href="/about"
-              >
-                {siteMeta.author}
-              </a>
-            </Link>
+            <span
+              className="p-author h-card"
+              style={{ "marginLeft": "15px", "color": "white", "fontWeight": "bold" }}
+            >
+              {meta.author}
+            </span>
           </div>
         </header>
         <div className="e-content">{children}</div>

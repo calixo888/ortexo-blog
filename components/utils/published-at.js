@@ -15,7 +15,7 @@ function PublishedAt(props) {
       </Link>
       <style jsx>{`
         a {
-          color: #555;
+          color: #eee;
           text-decoration: none;
         }
       `}</style>

@@ -41,9 +41,9 @@ function Header({ path, pageTitle, ogImage }) {
             font-size: 18px;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            color: #333;
+            color: #ddd;
             line-height: 1.5;
-            background-color: #fff;
+            background-color: #00154f;
           }
 
           h1,
@@ -54,6 +54,7 @@ function Header({ path, pageTitle, ogImage }) {
             font-weight: bold;
             color: inherit;
             line-height: 1.25;
+            color: white;
           }
 
           h1 {
@@ -83,8 +84,9 @@ function Header({ path, pageTitle, ogImage }) {
           }
 
           a {
-            color: #33e;
+            color: white;
             cursor: pointer;
+            text-decoration: underline;
           }
 
           a:hover,
@@ -103,7 +105,7 @@ function Header({ path, pageTitle, ogImage }) {
           blockquote {
             padding: 0.5em 1em;
             margin: 0.8em 0;
-            color: #555;
+            color: white;
             border-left: 0.25em solid #ccc;
           }
 
