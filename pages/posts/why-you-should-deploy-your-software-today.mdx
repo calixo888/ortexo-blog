@@ -1,0 +1,61 @@
+import { withRouter } from "next/router";
+import BlogPost from "../../components/layouts/blog-post";
+
+export const meta = {
+  published: true,
+  publishedAt: "2020-08-12",
+  author: "Katie Li,
+  title: "Why You Should Deploy Your Software Today",
+  summary: "Many beginners spend countless hours building projects, but no one else ever sees them.",
+  image: "/static/features/deploy.png"
+};
+
+export default withRouter(({ children, router }) => (
+  <BlogPost path={router.pathname} meta={meta}>
+    {children}
+  </BlogPost>
+));
+
+You’ve spent countless hours poring over textbooks and videos, debugging your code, browsing through Stack Overflow, and nearly ripping your hair out in frustration just to get your program to function properly. So why is it just sitting on your hard drive, unused?
+
+Once beginners reach a certain level of technical proficiency, they generally build small projects to practice and apply their skills. What they don’t do, however, is deploy their software and make it available in a live environment. While valuable experience may have been gained from the project, there’s no evidence to prove it without deploying it. As a result, hours of dedication go down the drain.
+
+Software deployment—the process of making software available for use—is an imperative part of the development process. Here are just a few of software deployment’s many benefits:
+
+
+**Improving your technical skills**
+
+One of the most intrinsic aspects of programming is identifying and fixing bugs, which improves your problem-solving skills and teaches you to write better code. Because local environments are drastically different from production environments, many bugs can be found only after software has been deployed. As a result, not deploying your projects inhibits your ability to test and fix errors, preventing you from effectively identifying areas for growth.
+
+Activities associated with deployment such as installation, configuration, testing, and performance monitoring will all deepen your understanding of programming and its real-world applications. Learning how to make consistent fixes to deployed software will also help you gain experience for future projects, whether they’re for work, for learning, or simply for fun.
+
+
+**Building a strong resume**
+
+The job search is generally a grueling, discouraging process, especially for students or those with little experience. It’s  paradoxical—you can’t get hired without experience and you can’t gain experience without being hired.
+
+Deploying your software, however, combats this roadblock by providing employers with evidence that you’re proficient in certain languages, frameworks, and technologies, even without corporate experience. It also demonstrates many other desirable qualities to have in an employee—the ability to plan and follow through, problem-solving skills, and a genuine interest in programming. As such, deploying your software, and thereby providing actual evidence of your projects, is a relatively easy way to make any resume relevant and appealing.
+
+
+**Attracting organic users**
+
+Releasing software into the real world often results in organic users, people who use your software without directly responding to any sort of advertisement or campaign. Even if it’s just a couple of users, this can be a motivating factor that forces you to test your software and collaborate with others, forcing you to put out the best software possible and become the best programmer you can be. Organic users often tend to  give feedback regarding further improvements to your project. Plus, if your software gains enough traction, it could even serve as a source of income further down the line.
+
+
+**Growing your personal brand**
+
+Making your projects available to the public shows others where your interests lie, allowing you to network and bond with other programmers. Having more projects available to the public also correlates with a larger user base, increased trust, and higher perceived value, all of which can  lead to you becoming a prominent and influential figure in the field. This is especially true when your projects all have a common theme or address a common issue. This can even pave the way towards becoming a specialist in your field, which will make you even more sought-out. None of this is possible, however, if the public is never exposed to  your projects.
+
+And of course, this increased trust in your personal brand can open all sorts of doors such as valuable corporate connections, job opportunities, and increased organic users.
+
+
+**Gaining real-world experience**
+
+Learning to go through the stages of deployment, from installation to configuration to testing, is an extremely valuable experience to have. Even if you’re not responsible for deploying software in your future career, learning the process still heightens your overall understanding of programming.
+
+Unleashing your software into the real world also comes with a sense of pride. After all, the purpose of programming is to create software for people to use. The fulfillment that comes with making your projects available for the public to use will motivate you to learn, improve, and become a better programmer overall.
+
+
+**Conclusion**
+
+Software deployment is incredibly beneficial to any programmer, regardless of their level of experience. Many beginners are held back by the belief that their projects aren’t ready for the world to see, but it’s entirely alright to release imperfect software. The most important thing is to just get it out there. As Reid Hoffman, the founder of LinkedIn, once said, “if you are not embarrassed by the first version of your product, you’ve launched too late.”
