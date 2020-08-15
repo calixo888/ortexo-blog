@@ -1,0 +1,26 @@
+import { withRouter } from "next/router";
+import BlogPost from "../../components/layouts/blog-post";
+
+export const meta = {
+  published: true,
+  publishedAt: "2020-08-14",
+  author: "Elizabeth Field",
+  title: "Problems in STEM Empowerment",
+  summary: "Despite the benefits of STEM Empowerment many fail to recognize that there are areas still in need of improvement.",
+  image: "/static/features/problems.png"
+};
+
+export default withRouter(({ children, router }) => (
+  <BlogPost path={router.pathname} meta={meta}>
+    {children}
+  </BlogPost>
+));
+
+
+STEM empowerment, for the most part, is a wonderful movement. It is an encouraging and unconditionally supportive community pushing individuals to pursue their dreams, despite what the rest of the world seems to think. It has had a substantial impact on many of today’s youth, providing opportunities, establishing contacts, and teaching important skills that may not be obtained elsewhere. STEM empowerment provides a degree of equity within the field. It helps those at a disadvantage, whether that originates from socioeconomic status, gender or racial bias, or any other reason one may be hindered from receiving the same education, motivation, and options as others in their prospective fields. The community gives confidence to those in doubt. It gives power to those in need. But despite the incredible sentiment that STEM empowerment embodies, there are issues present. There are ways the community must improve and address problems that are inherent in such a group.
+
+Some of the most pressing issues regarding STEM empowerment lie in its memberage. When viewing the age/professionalism statistics regarding who is involved in the initiatives, it is not diverse in the least. In other words, it consists of predominantly young, undergraduate and high school students. This creates a gamut of problems, such as inhibition of opportunity and networking quality, limits on professional recognition and organizational legitimacy, and a “graduation” from empowerment. 
+
+The issue most prominent to current mentees of STEM empowerment are the barriers it places on the opportunities and connections offered by the movement. Based on the makeup of the group, most people do not have the connections to provide the highest quality of opportunities to those looking to STEM empowerment groups as a means of connecting them to their desired fields. Of course, there is still much value in being part of any initiative or learning opportunity, whether it's a lightly organized group founded by a group of high school students or an established multimillion dollar enterprise. However, the lack of upper-scale opportunities does not mitigate the equity gap completely, as the access to them is still stratified. Those not in need of empowerment remain with better access to organizations and connections which will help them in the future. 
+
+Additionally, within this same subject, is the issue that arises from “high schoolers teaching high schoolers” or circumstances of similar characterizations. Generally, the relationship between mentor and mentee is subordinate and superior, not an associate or equal. In the current STEM empowerment world, people are taught by those who have the same level of education as themselves, those who do not have anything to add to a subject other than their own perspective. Again, there is value to this; however, there is more value to a lecture performed by one in a superior position alongside their alternative perspective, one in which students learn new concepts and methods in addition to their applications. Even a mixture of the two would be more beneficial than the current state. 
